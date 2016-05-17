@@ -1,12 +1,16 @@
 #!/usr/bin/lua
 
--- For use with openwrt since openwrt supports LUA.
+-- Cloudflare DDNS updater for OpenWRT
+-- For use with openwrt since openwrt supports LUA
 -- Prerequisites:
 
+-- Cloudflare account
+-- DDNS fully qualified domain name defined within Cloudflare
 -- luasec
 -- luasocket
 -- libubus-lua
 -- json4lua
+-- Cloudflare DNS records defined within Cloudflare
 
 -- I have a PPPoE connection so I just drop this script in /etc/ppp/ip-up.d
 -- You can run via crontab or put it in interface hotplug :)
